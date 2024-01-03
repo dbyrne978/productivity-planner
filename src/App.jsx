@@ -1,11 +1,9 @@
 import './App.css'
-import Month from './components/Month'
+import Login from './components/Login'
 
 function App() {
   return (
-    <>
-      <Month/>
-    </>
+    <Login/>
   )
 }
 
