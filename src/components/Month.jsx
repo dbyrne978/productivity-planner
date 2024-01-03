@@ -1,9 +1,9 @@
-import * as React from 'react';
-import Card from '@mui/material/Card';
-import CardContent from '@mui/material/CardContent';
-import CardMedia from '@mui/material/CardMedia';
-import Typography from '@mui/material/Typography';
-import { Button, CardActionArea, CardActions } from '@mui/material';
+import * as React from 'react'
+import Card from '@mui/material/Card'
+import CardContent from '@mui/material/CardContent'
+import CardMedia from '@mui/material/CardMedia'
+import Typography from '@mui/material/Typography'
+import { Button, CardActionArea, CardActions } from '@mui/material'
 
 export default function Month() {
   return (
@@ -29,7 +29,16 @@ export default function Month() {
         <Button size="small" color="primary">
           Share
         </Button>
+        <Button size="small" color="secondary">
+          Share
+        </Button>
+        <Button size="small" color="error">
+          Share
+        </Button>
+        <Button size="small" color="success">
+          Share
+        </Button>
       </CardActions>
     </Card>
-  );
+  )
 }
