@@ -13,12 +13,12 @@ import LockOutlinedIcon from '@mui/icons-material/LockOutlined'
 import Typography from '@mui/material/Typography'
 import Copyright from './Copyright'
 
-export default function SignInSide() {
+const Login = () => {
   const handleSubmit = (event) => {
     event.preventDefault()
     const data = new FormData(event.currentTarget)
     console.log({
-      email: data.get('email'),
+      username: data.get('username'),
       password: data.get('password'),
     })
   }
@@ -61,10 +61,10 @@ export default function SignInSide() {
               margin="normal"
               required
               fullWidth
-              id="email"
-              label="Email Address"
-              name="email"
-              autoComplete="email"
+              id="username"
+              label="Username"
+              name="username"
+              autoComplete="username"
               autoFocus
             />
             <TextField
@@ -108,3 +108,5 @@ export default function SignInSide() {
     </Grid>
   )
 }
+
+export default Login
