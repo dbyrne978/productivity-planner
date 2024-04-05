@@ -12,6 +12,7 @@ import Grid from '@mui/material/Grid'
 import LockOutlinedIcon from '@mui/icons-material/LockOutlined'
 import Typography from '@mui/material/Typography'
 import Copyright from './Copyright'
+import Signup from './Signup'
 
 const Login = () => {
   const handleSubmit = (event) => {
@@ -96,9 +97,7 @@ const Login = () => {
                 </Link>
               </Grid>
               <Grid item>
-                <Link href="#" variant="body2">
-                  {"Don't have an account? Sign Up"}
-                </Link>
+                <Signup/>
               </Grid>
             </Grid>
             <Copyright sx={{ mt: 5 }} />
